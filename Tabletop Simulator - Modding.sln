@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tabletop Simulator - Modding.CSharp", "Tabletop Simulator - Modding.CSharp.csproj", "{B97A485F-D300-3A6E-76C3-0C15800CA771}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tabletop Simulator - Modding.CSharp.Editor", "Tabletop Simulator - Modding.CSharp.Editor.csproj", "{EEA04A80-9209-A41B-00A8-6E7D4DF4C972}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B97A485F-D300-3A6E-76C3-0C15800CA771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B97A485F-D300-3A6E-76C3-0C15800CA771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B97A485F-D300-3A6E-76C3-0C15800CA771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B97A485F-D300-3A6E-76C3-0C15800CA771}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEA04A80-9209-A41B-00A8-6E7D4DF4C972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEA04A80-9209-A41B-00A8-6E7D4DF4C972}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEA04A80-9209-A41B-00A8-6E7D4DF4C972}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEA04A80-9209-A41B-00A8-6E7D4DF4C972}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
