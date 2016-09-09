@@ -1,4 +1,4 @@
-Tabletop Simulator Modding Project:
+Tabletop Simulator Modding:
 
 This Unity project is for our advanced Tabletop Simulator modders that want to have complete control over their custom objects with additional features. 
 Anything that Unity engine provides besides scripting can be exported as an AssetBundle and then reimported into Tabletop Simulator.
