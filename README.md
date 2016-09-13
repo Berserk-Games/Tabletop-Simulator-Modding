@@ -5,6 +5,7 @@ Anything that Unity engine provides besides scripting can be exported as an Asse
 This includes full shader / material support, animations, sounds, lights, particles, and much more.
 
 We provide scripting support with a Lua api that can be found here: http://berserk-games.com/knowledgebase/scripting/
+This project was made with Unity 5.3.4: https://unity3d.com/get-unity/download/archive
 
 This project contains:
 
