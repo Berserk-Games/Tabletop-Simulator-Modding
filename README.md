@@ -6,29 +6,4 @@ This includes full shader / material support, animations, sounds, lights, partic
 
 We provide scripting support with a Lua api that can be found here: http://berserk-games.com/knowledgebase/scripting/
 
-This project was made with Unity 5.3.4: https://unity3d.com/get-unity/download/archive
-
-This project contains:
-
-Multiple skys to preview your creations with how they will appear in TTS. <Skys Folder>
-
-Example objects to provide scale (One Unity unit is 1 inch). <Examples Folder>
-
-Scripts to enable advanced functionality. <Scripts Folder>
-
-
-Steps:
-
-1: Create your object using any built in Unity feature.
-
-2: Attach any provided scripts in the "Scripts" folder for advanced functionality.
-
-3: Create a prefab of that object.
-
-4: Assign that prefab to a unique AssetBundle name.
-
-5: Build your AssetBundles by right clicking on the prefab and then selecting "Build AssetBundles".
-
-6: AssetBundles can be found in your "Tabletop Simulator - Modding/AssetBundles" folder.
-
-7: Upload your AssetBundle to a webhost or in-game to Steam Cloud and use with the Custom AssetBundle object.
+For all the info you need for this project we have a page on our Knowledge Base: http://berserk-games.com/knowledgebase/assetbundles/
