@@ -42,7 +42,7 @@ namespace AssetBundles
                     }
                 }
 
-                Debug.Log("Build complete! AssetBundles can be found in the 'Tabletop Simulator - Modding/AssetBundles' folder.");
+                Debug.Log("Build complete! AssetBundles can be found in the 'Tabletop-Simulator-Modding/AssetBundles' folder.");
             }
             catch(Exception e)
             {
