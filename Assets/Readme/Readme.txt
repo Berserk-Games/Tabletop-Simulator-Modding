@@ -1,0 +1,1 @@
+Documentation: http://berserk-games.com/knowledgebase/assetbundles/
