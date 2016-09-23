@@ -6,7 +6,7 @@ using System;
 
 namespace AssetBundles
 {
-	public class AssetBundlesMenuItems
+	public class TTSAssetBundlesMenuItems
 	{	
 		[MenuItem ("Assets/Build AssetBundles")]
 		static public void BuildAssetBundles ()
@@ -48,6 +48,6 @@ namespace AssetBundles
             {
                 Debug.LogError("Error building AssetBundles: " + e.Message);
             }           
-        }
+        }        
 	}
 }
