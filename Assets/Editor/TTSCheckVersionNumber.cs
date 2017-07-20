@@ -20,7 +20,7 @@ public class TTSCheckVersionNumber {
         public string body;
     }
         
-    const string unityVersion = "5.3.4";
+    const string unityVersion = "5.6.2";
     const string versionPath = "version.txt";
 
     static TTSCheckVersionNumber()

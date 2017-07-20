@@ -37,6 +37,13 @@ public class TTSAssetBundleEffects : MonoBehaviour
     }
 
     [Serializable]
+    public class TTSAnimator
+    {
+        public Animator AnimatorComponent;
+        public string StateName;
+    }
+
+    [Serializable]
     public class TTSEffect
     {
         public string Name;
@@ -44,6 +51,7 @@ public class TTSAssetBundleEffects : MonoBehaviour
         public List<TTSParticle> Particles;
         public TTSSound Sound;
         public TTSAnimation Animation;
+        public TTSAnimator Animator;
     }
 
     [Serializable]
