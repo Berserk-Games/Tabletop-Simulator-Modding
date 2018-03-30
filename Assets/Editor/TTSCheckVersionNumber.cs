@@ -20,7 +20,7 @@ public class TTSCheckVersionNumber {
         public string body;
     }
         
-    const string unityVersion = "5.6.2";
+    const string unityVersion = "5.6.5";
     const string versionPath = "version.txt";
 
     static TTSCheckVersionNumber()
@@ -31,7 +31,7 @@ public class TTSCheckVersionNumber {
             Debug.LogError(string.Format("You are using the wrong version of Unity. Should be using Unity {0}. Current version is {1}.", unityVersion, Application.unityVersion));
         }
 
-        WWW www = new WWW("https://api.github.com/repos/Knils/Tabletop-Simulator-Modding/releases");        
+        WWW www = new WWW("https://api.github.com/repos/Berserk-Games/Tabletop-Simulator-Modding/releases");        
 
         ContinuationManager.Add(() => www.isDone, () =>
         {
