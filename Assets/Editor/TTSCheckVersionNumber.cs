@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEditor;
 using System;
 using System.IO;
+using UnityEngine.Networking;
 
 [InitializeOnLoad]
 public class TTSCheckVersionNumber {
@@ -20,7 +21,7 @@ public class TTSCheckVersionNumber {
         public string body;
     }
         
-    const string unityVersion = "5.6.5";
+    const string unityVersion = "2019.1";
     const string versionPath = "version.txt";
 
     static TTSCheckVersionNumber()
@@ -31,13 +32,14 @@ public class TTSCheckVersionNumber {
             Debug.LogError(string.Format("You are using the wrong version of Unity. Should be using Unity {0}. Current version is {1}.", unityVersion, Application.unityVersion));
         }
 
-        WWW www = new WWW("https://api.github.com/repos/Berserk-Games/Tabletop-Simulator-Modding/releases");        
+        UnityWebRequest webRequest = UnityWebRequest.Get("https://api.github.com/repos/Berserk-Games/Tabletop-Simulator-Modding/releases");
+        webRequest.SendWebRequest();
 
-        ContinuationManager.Add(() => www.isDone, () =>
+        ContinuationManager.Add(() => webRequest.isDone, () =>
         {
-            if (!string.IsNullOrEmpty(www.error)) //Error
+            if (webRequest.isNetworkError) //Error
             {
-                Debug.LogError("Failed to fetch version number from GitHub: " + www.error);
+                Debug.LogError("Failed to fetch version number from GitHub: " + webRequest.error);
             }
             else
             {
@@ -60,7 +62,7 @@ public class TTSCheckVersionNumber {
                 try
                 {      
                     //Hacky way to get around JsonUtility not working with arrays         
-                    GitHubRelease[] releases = JsonHelper.FromJson<GitHubRelease>(www.text);
+                    GitHubRelease[] releases = JsonHelper.FromJson<GitHubRelease>(webRequest.downloadHandler.text);
 
                     bool foundRelease = false;
 
@@ -118,7 +120,7 @@ public class TTSCheckVersionNumber {
                 }
             }
 
-            www.Dispose();
+            webRequest.Dispose();
         });
     }     
 }

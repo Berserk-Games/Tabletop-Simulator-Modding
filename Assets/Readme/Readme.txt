@@ -1,1 +1,1 @@
-Documentation: http://berserk-games.com/knowledgebase/assetbundles/
+Documentation: https://kb.tabletopsimulator.com/custom-content/custom-assetbundle/
