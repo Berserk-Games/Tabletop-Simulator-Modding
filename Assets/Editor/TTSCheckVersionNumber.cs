@@ -21,7 +21,7 @@ public class TTSCheckVersionNumber {
         public string body;
     }
         
-    const string unityVersion = "2019.1";
+    const string unityVersion = "2019.4";
     const string versionPath = "version.txt";
 
     static TTSCheckVersionNumber()
